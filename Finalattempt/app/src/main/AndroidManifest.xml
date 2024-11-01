@@ -13,6 +13,22 @@
         android:theme="@style/Theme.FinalAttempt"
         tools:targetApi="31">
         <activity
+            android:name=".Notificationsettings"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:theme="@style/Theme.FinalAttempt" />
+        <activity
+            android:name=".RequestCheck"
+            android:exported="false" />
+        <activity
+            android:name=".PreviousHolidays"
+            android:exported="false" />
+        <activity
+            android:name=".HolidayCalender"
+            android:exported="false" />
+        <activity
             android:name=".HolidayMainPage"
             android:exported="false" />
         <activity

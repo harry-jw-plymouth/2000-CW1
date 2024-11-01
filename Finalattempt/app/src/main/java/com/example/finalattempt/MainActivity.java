@@ -32,16 +32,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        button1=(Button)findViewById(R.id.button_1id);
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, MainActivity2.class);
-                intent.putExtra("key",value);
-                startActivity(intent);
-            }
-        });
         ELogInButton=(Button)findViewById(R.id.EmployeeLogIn);
         ELogInButton.setOnClickListener(new View.OnClickListener() {
             @Override

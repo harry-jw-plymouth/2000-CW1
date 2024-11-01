@@ -16,7 +16,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     TextView textView;
     Button button2;Button EditDetailsButton;
-    Button ViewDetailsButton;Button ViewHoliday;
+    Button ViewDetailsButton;Button ViewHoliday;Button NotificSettingsButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,15 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity2.this,EditDetails.class);
+                startActivity(intent);
+            }
+        });
+
+        NotificSettingsButton=(Button)findViewById(R.id.NotifSettingsbutton);
+        NotificSettingsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity2.this,Notificationsettings.class);
                 startActivity(intent);
             }
         });

@@ -10,4 +10,6 @@
     <color name="DeleteDenyColor">#9B2E1F</color>
     <color name="ConfirmColor">#56C6E5</color>
     <color name="PopUpColor">#A5A4AF</color>
+    <color name="BackColor">#DE412D</color>
+    <color name="Green">#578E38</color>
 </resources>
