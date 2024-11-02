@@ -68,7 +68,7 @@ you currently have [] days left to book"
         app:layout_constraintTop_toTopOf="@+id/editdetailsbox" />
 
     <CalendarView
-        android:id="@+id/calendarViewForPrevHolidays"
+        android:id="@+id/CalendarViewForPrevHolidays"
         android:layout_width="416dp"
         android:layout_height="402dp"
 

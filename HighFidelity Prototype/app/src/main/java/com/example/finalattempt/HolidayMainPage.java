@@ -23,6 +23,12 @@ public class HolidayMainPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+        Intent intent=getIntent();
+        int year=intent.getIntExtra("year",1);
+        int day=intent.getIntExtra("day",1);
+        int month=intent.getIntExtra("month",1);
+        int DateSeleced=intent.getIntExtra("DateSelection",1);
+
         setContentView(R.layout.activity_holiday_main_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -42,6 +48,7 @@ public class HolidayMainPage extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent=new Intent(HolidayMainPage.this,HolidayCalender.class);
+                intent.putExtra("DateSelection",1);
                 startActivity(intent);
             }
         });
@@ -50,6 +57,7 @@ public class HolidayMainPage extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent=new Intent(HolidayMainPage.this,HolidayCalender.class);
+                intent.putExtra("DateSelection",2);
                 startActivity(intent);
             }
         });

@@ -8,6 +8,8 @@
     android:background="@color/StandardBackGround"
     tools:context=".PreviousHolidays">
 
+
+
     <TextView
         android:id="@+id/textView20"
         android:layout_width="match_parent"
@@ -73,7 +75,7 @@ you currently have [] days left to book"
 
         app:layout_constraintBottom_toBottomOf="@+id/textView31"
         app:layout_constraintTop_toTopOf="@+id/textView45"
-        app:layout_constraintVertical_bias="0.993"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
@@ -143,5 +145,6 @@ you currently have [] days left to book"
         android:textColor="@color/white"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="11dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
