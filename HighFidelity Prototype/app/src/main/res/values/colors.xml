@@ -12,4 +12,5 @@
     <color name="PopUpColor">#A5A4AF</color>
     <color name="BackColor">#DE412D</color>
     <color name="Green">#578E38</color>
+    <color name="Yellow">#ffff00</color>
 </resources>
